@@ -22,76 +22,86 @@
     <!-- 使用JSX，type類型為 "text/babel" -->
     <script type="text/babel">
 
+        const Content = () => {
+            return (
+                <div className="content">
+                    <p><img src="./img/title_img.png" alt="" /></p>
+                    <h3>打造綠色身體</h3>
+                    <p>lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
+                        lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
+                        lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
+                        lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
+                        lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
+
+                    </p>
+                    <p>wdfgfdndshsgbdgbgwdfgfdndshsgbdgbgwd
+                        fgfdndshsgbdgbgwdfgfdndshsgbdgbgwdf
+                        gfdndshsgbdgbgwdfgfdndshsgbdgbgwdfgfd
+                    </p>
+
+                    <div className="info">
+                        <div className="box b1">
+                            <p><img src="./img/icon1.png" alt="" /></p>
+                            <h4>團購優惠</h4>
+                            <p>skdgdklsjgflsjglfdskdg
+                                dklsjgflsjglfdskdgdklsjgf
+                                lsjglfdskdgdklsjgflsjglfd</p>
+                            <p><a href="#">詳細內容</a></p>
+                        </div>
+
+                        <div className="box b2">
+                            <p><img src="./img/icon2.png" alt="" /></p>
+                            <h4>送貨到府</h4>
+                            <p>skdgdklsjgflsjglfdskdg
+                                dklsjgflsjglfdskdgdklsjgf
+                                lsjglfdskdgdklsjgflsjglfd</p>
+                            <p><a href="#">詳細內容</a></p>
+                        </div>
+
+                        <div className="box b3">
+                            <p><img src="./img/icon3.png" alt="" /></p>
+                            <h4>客服專線</h4>
+                            <p>skdgdklsjgflsjglfdskdg
+                                dklsjgflsjglfdskdgdklsjgf
+                                lsjglfdskdgdklsjgflsjglfd</p>
+                            <p><a href="#">詳細內容</a></p>
+                        </div>
+                    </div>
+                    <div className="footer">
+                        <h2>北商有機蔬果</h2>
+                        <h4>copyrught 2023 &copy; 北商有機蔬果</h4>
+                    </div>
+                </div>
+            )
+        }
+
+        const Header = () => {
+            return (
+                <div className="header">
+                    <h1><img src="./img/logo.png" alt="" /></h1>
+                    <ul>
+                        <li><a href="">首頁</a></li>
+                        <li><a href="">最新消息</a></li>
+                        <li><a href="">關於我們</a></li>
+                        <li><a href="">產地直送</a></li>
+                        <li><a href="">友善園地</a></li>
+                        <li><a href="">線上訂房</a></li>
+                        <li><a href="">聯絡我們</a></li>
+                    </ul>
+                </div>
+            )
+
+        }
         // 步驟三：建立 React 元件，字首大寫
         function App() {
             return (
                 <div>
                     <div className="container">
-
-                        <div className="header">
-                            <h1><img src="./img/logo.png" alt="" /></h1>
-                            <ul>
-                                <li><a href="">首頁</a></li>
-                                <li><a href="">最新消息</a></li>
-                                <li><a href="">關於我們</a></li>
-                                <li><a href="">產地直送</a></li>
-                                <li><a href="">友善園地</a></li>
-                                <li><a href="">線上訂房</a></li>
-                                <li><a href="">聯絡我們</a></li>
-                            </ul>
-                        </div>
-
-                        <div className="content">
-                            <p><img src="./img/title_img.png" alt="" /></p>
-                            <h3>打造綠色身體</h3>
-                            <p>lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
-                                lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
-                                lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
-                                lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
-                                lkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshshlkfdlkshsh
-
-                            </p>
-                            <p>wdfgfdndshsgbdgbgwdfgfdndshsgbdgbgwd
-                                fgfdndshsgbdgbgwdfgfdndshsgbdgbgwdf
-                                gfdndshsgbdgbgwdfgfdndshsgbdgbgwdfgfd
-                            </p>
-
-                            <div className="info">
-                                <div className="box b1">
-                                    <p><img src="./img/icon1.png" alt="" /></p>
-                                    <h4>團購優惠</h4>
-                                    <p>skdgdklsjgflsjglfdskdg
-                                        dklsjgflsjglfdskdgdklsjgf
-                                        lsjglfdskdgdklsjgflsjglfd</p>
-                                    <p><a href="#">詳細內容</a></p>
-                                </div>
-
-                                <div className="box b2">
-                                    <p><img src="./img/icon2.png" alt="" /></p>
-                                    <h4>送貨到府</h4>
-                                    <p>skdgdklsjgflsjglfdskdg
-                                        dklsjgflsjglfdskdgdklsjgf
-                                        lsjglfdskdgdklsjgflsjglfd</p>
-                                    <p><a href="#">詳細內容</a></p>
-                                </div>
-
-                                <div className="box b3">
-                                    <p><img src="./img/icon3.png" alt="" /></p>
-                                    <h4>客服專線</h4>
-                                    <p>skdgdklsjgflsjglfdskdg
-                                        dklsjgflsjglfdskdgdklsjgf
-                                        lsjglfdskdgdklsjgflsjglfd</p>
-                                    <p><a href="#">詳細內容</a></p>
-                                </div>
-                            </div>
-                            <div className="footer">
-                                <h2>北商有機蔬果</h2>
-                                <h4>copyrught 2023 &copy; 北商有機蔬果</h4>
-                            </div>
-                        </div>
-
-
-                    </div>
+                    {/*左欄區*/}
+                    <Header />
+                    {/*右欄區*/}
+                    <Content />
+                </div>
                 </div>
             )
         }
